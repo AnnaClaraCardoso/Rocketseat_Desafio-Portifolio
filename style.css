@@ -13,30 +13,31 @@ body {
 }
 
 aside {
-    max-width: 348px;
+    max-width: 330px;
     margin-left: 1em;
 }
 
-aside section {
+section {
     background-color: var(--bg-cards);
     border-radius: 15px;
-    padding: 1rem;
+    padding: 2rem;
+    margin-bottom: 2em;
 }
 
-.social-medias_card li a {
+.card {
     color: var(--text-color);
     font-size: 13px;
 }
 
-.social-medias_card ul {
-    list-style: none;
-}
-
-.social-medias_card ul li a {
+.card ul li a {
     text-decoration: none;
 }
 
-.social-medias_card i {
+.card ul {
+    list-style: none;
+}
+
+.card i {
     padding: 1rem 1rem 0rem 0rem;
     font-size: 16px;
 }
@@ -47,14 +48,14 @@ aside section {
     border: 2px solid #00FF00;
 }
 
-.techs-content {
+.technologies .card-content {
     display: grid; /* ativa organização do display em linhas e colunas de um elemento-pai */
     grid-template-columns: repeat(3, 1fr);
     gap: 10px; /* permite que */
     margin-top: 20px;
 }
 
-.tech {
+.technologies .card-content .tech {
     display: inline-block;
     padding: 0.5rem;
     font-size: .75em;
@@ -70,8 +71,8 @@ aside section {
     text-transform: uppercase;
 }
 
-.experiences, .education {
-    font-size: 13px;
+.experiences ul li, .education ul li {
+    margin-bottom: 1rem;
 }
 
 .experiences ul li span:nth-child(1), .education ul li span:nth-child(1){
