@@ -9,42 +9,79 @@
 
 body {
     background-color: var(--body-bg-color);
+    color: var(--text-color);
 }
 
 aside {
     max-width: 348px;
+    margin-left: 1em;
 }
 
-header, .social-medias {
+aside section {
     background-color: var(--bg-cards);
     border-radius: 15px;
     padding: 1rem;
 }
 
-.social-medias li a {
+.social-medias_card li a {
     color: var(--text-color);
     font-size: 13px;
 }
 
-.social-medias ul {
+.social-medias_card ul {
     list-style: none;
 }
 
-.social-medias ul li a {
+.social-medias_card ul li a {
     text-decoration: none;
 }
 
-.social-medias i {
-    padding: 0.5rem;
+.social-medias_card i {
+    padding: 1rem 1rem 0rem 0rem;
+    font-size: 16px;
 }
 
-header {
-
-}
-
-header img {
+.profile #profile-picture {
     width: 150px;
     border-radius: 50%;
     border: 2px solid #00FF00;
 }
 
+.techs-content {
+    display: grid; /* ativa organização do display em linhas e colunas de um elemento-pai */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* permite que */
+    margin-top: 20px;
+}
+
+.tech {
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: .75em;
+    font-weight: 700;
+    min-width: 86px;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    border-radius: 30px;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: var(--bg-techs);
+    text-transform: uppercase;
+}
+
+.experiences, .education {
+    font-size: 13px;
+}
+
+.experiences ul li span:nth-child(1), .education ul li span:nth-child(1){
+    font-weight: 700;
+}
+
+.experiences ul li span:nth-child(2), .education ul li span:nth-child(2) {
+    font-weight: 300;
+}
+
+.experiences ul li span:nth-child(3), .education ul li span:nth-child(3){
+    font-weight: 500;
+}
