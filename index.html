@@ -17,82 +17,78 @@
 </head>
 
 <body>
-    <aside> <!-- elemento html semântico para contéudo lateral -->
-        <section class="profile">
-            <img id="profile-picture" src="https://github.com/AnnaClaraCardoso.png" alt="">
-            <h1 id="profile_full-name">Anna Clara Cardoso Martins</h1>
-            <p></p>
-        </section>
-
-        <section class="card social-medias">
-            <ul>
-                <li>
-                    <a href="#"> 
-                        <i class="fa-solid fa-location-dot"></i>
-                        Location
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-briefcase"></i>
-                        jidsfhois
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                        github
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                        twitter
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin"></i>
-                        linkedin
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-globe"></i>
-                        global
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-envelope"></i>
-                        mail
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="card technologies">
-            <div class="card-header">
+    <div class="grid-container">
+        <aside> <!-- elemento html semântico para contéudo lateral -->
+            <section class="profile">
+                <img id="profile-picture" src="https://github.com/AnnaClaraCardoso.png" alt="">
+                <h1 id="profile_full-name">Anna Clara Cardoso Martins</h1>
+                <p id="occupation">dsjfsdojfp fwfwewef</p>
+            </section>
+    
+            <section class="social-medias">
+                <ul>
+                    <li>
+                        <a href="#"> 
+                            <img src="assets/map-pin.svg" alt="location-pin_icon">
+                            Location
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/briefcase.svg" alt="company_icon">
+                            jidsfhois
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/github.svg" alt="github_icon">
+                            github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/linkedin.svg" alt="linkedin_icon">
+                            linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/twitter.svg" alt="">
+                            twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/globe.svg" alt="">
+                            global
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/mail.svg" alt="">
+                            mail
+                        </a>
+                    </li>
+                </ul>
+            </section>
+    
+            <section class="technologies">
                 <h2>Tecnologias</h2>
-            </div>
-            <div class="card-content">
-                <span class="tech">javascript</span>
-                <span class="tech">reactjs</span>
-                <span class="tech">nodejs</span>
-                <span class="tech">git</span>
-                <span class="tech">github</span>
-                <span class="tech">html</span>
-                <span class="tech">css</span>
-                <span class="tech">elixir</span>
-                <span class="tech">react native</span>
-            </div>
-        </section>
-
-        <section class="card experiences">
-            <div class="card-header">
-                <h3>Experiências</h3>
-            </div>
-            <div class="card-content">
+                <div class="content">
+                    <p class="tech">javascript</p>
+                    <p class="tech">nodejs</p>
+                    <p class="tech">reactjs</p>
+                    <p class="tech">react native</p>
+                    <p class="tech">git</p>
+                    <p class="tech">github</p>
+                    <p class="tech">html</p>
+                    <p class="tech">css</p>
+                    <p class="tech">elixir</p>
+                </div>
+            </section>
+    
+            <section class="experiences">
+                <h2>Experiências</h2>
                 <ul>
                     <li>
                         <span>Rocketseat</span><br>
@@ -115,52 +111,112 @@
                         <span>Community Experience</span>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </section>
+    
+            <section class="card education">   
+                <div class="card-header">
+                    <h2>Educação</h2>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            <span>Rocketseat</span><br>
+                            <span>2019 - 2019</span><br>
+                            <span>GoStack</span>
+                        </li>
+                        <li>
+                            <span>Rocketseat</span><br>
+                            <span>2019 - 2020</span><br>
+                            <span>Ignite</span>
+                        </li>
+                        <li>
+                            <span>Rocketseat</span><br>
+                            <span>2019 - 2021</span><br>
+                            <span>Ignite Pro</span>
+                        </li>
+                        <li>
+                            <span>Rocketseat</span><br>
+                            <span>2019 - 2021</span><br>
+                            <span>Ignite Pro</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </aside>
 
-        <section class="card education">   
-            <div class="card-header">
-                <h2>Educação</h2>
-            </div>
-            <div class="card-content">
-                <ul>
-                    <li>
-                        <span>Rocketseat</span><br>
-                        <span>2019 - 2019</span><br>
-                        <span>GoStack</span>
-                    </li>
-                    <li>
-                        <span>Rocketseat</span><br>
-                        <span>2019 - 2020</span><br>
-                        <span>Ignite</span>
-                    </li>
-                    <li>
-                        <span>Rocketseat</span><br>
-                        <span>2019 - 2021</span><br>
-                        <span>Ignite Pro</span>
-                    </li>
-                    <li>
-                        <span>Rocketseat</span><br>
-                        <span>2019 - 2021</span><br>
-                        <span>Ignite Pro</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </aside>
+        <main>
 
-    <main>
-        <section>
-            <h2>My Projects</h2>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <h2>Recent Posts</h2>
-            <div></div>
-        </section>
-    </main>
+            <section class="projects-section">
+                
+                <header>
+                    <h2>My Projects</h2>
+                    <span>Ver todos</span>
+                </header>
+                
+                <div class="projects-content-container">
 
+                    <div class="project-card">
+                        <div class="card-header">
+                            <img src="assets/folder.svg" alt="">
+                            <h3>my-onix</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>fdsjfdsoifsjf0dsi</p>
+                            <span class="favorite">
+                                <img class="favorite-icon" src="assets/star.svg" alt="">
+                                <span class="favs-count"></span>
+                            </span>
+                            <span class="forks">
+                                <img class="branch-icon" src="assets/git-branch.svg" alt="">
+                                <span class="forks-count"></span>
+                            </span>
+                            <span class="tech">
+                                <span class="language-color" style="background-color: #f1e05a;"></span>
+                                <span class="programmingLanguage">Javascript</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+
+                        <div class="card-header">
+                            <img src="assets/folder.svg" alt="">
+                            <h3>my-onix</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <p>fdsjfdsoifsjf0dsi</p>
+                            <span class="favorite">
+                                <img class="favorite-icon" src="assets/star.svg" alt="">
+                                <span class="favs-count"></span>
+                            </span>
+                            <span class="forks">
+                                <img class="branch-icon" src="assets/git-branch.svg" alt="">
+                                <span class="forks-count"></span>
+                            </span>
+                            <span class="tech">
+                                <span class="language-color" style="background-color: #f1e05a;"></span>
+                                <span class="programmingLanguage">Javascript</span>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="recent-posts-section">
+                <header>
+                    <h2>Recent posts</h2>
+                    <span>Ver todos</span>
+                </header>
+                <div></div>
+            </section>
+
+        </main>
+
+    </div>
     <script src="https://kit.fontawesome.com/cb0174e86c.js" crossorigin="anonymous"></script>
 </body>
 
