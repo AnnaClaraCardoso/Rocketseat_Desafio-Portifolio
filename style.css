@@ -6,40 +6,74 @@
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: var(--body-bg-color);
     color: var(--text-color);
 }
 
+.grid-container {
+    margin: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 3em;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
 aside {
-    max-width: 330px;
-    margin-left: 1em;
+    display: grid;
+    grid-row-gap: 2em;
 }
 
 section {
     background-color: var(--bg-cards);
     border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 2em;
 }
 
-.card {
-    color: var(--text-color);
+aside section {
+    padding: 1.5em;
+}
+
+li, p {
     font-size: 13px;
 }
 
-.card ul li a {
+.social-medias ul li a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
-.card ul {
+.social-medias ul li a img {
+    vertical-align: middle;
+    width: 1.5rem;
+    overflow: hidden;
+    padding: 0.8rem;
+}
+
+.social-medias ul {
     list-style: none;
+    padding: 0;
 }
 
-.card i {
-    padding: 1rem 1rem 0rem 0rem;
-    font-size: 16px;
+.profile {
+    text-align: center;
 }
 
 .profile #profile-picture {
@@ -48,26 +82,33 @@ section {
     border: 2px solid #00FF00;
 }
 
-.technologies .card-content {
-    display: grid; /* ativa organização do display em linhas e colunas de um elemento-pai */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; /* permite que */
-    margin-top: 20px;
+.profile #profile_full-name {
+    margin-top: 1.5em;
+    font-size: 23px;
 }
 
-.technologies .card-content .tech {
-    display: inline-block;
-    padding: 0.5rem;
-    font-size: .75em;
+.profile #occupation {
+    font-weight: 300;
+}
+
+.technologies .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0.8em;
+}
+
+.technologies .content .tech {
     font-weight: 700;
-    min-width: 86px;
-    line-height: 1;
-    color: #000;
+    font-size: 10px;
     text-align: center;
-    border-radius: 30px;
-    vertical-align: baseline;
-    white-space: nowrap;
+    color: #000;
+    padding: 0.5rem;
+    margin: 0;
     background-color: var(--bg-techs);
+    border-radius: 30px;
+    min-width: 73px;
     text-transform: uppercase;
 }
 
@@ -76,13 +117,38 @@ section {
 }
 
 .experiences ul li span:nth-child(1), .education ul li span:nth-child(1){
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .experiences ul li span:nth-child(2), .education ul li span:nth-child(2) {
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 
 .experiences ul li span:nth-child(3), .education ul li span:nth-child(3){
-    font-weight: 500;
+    font-weight: 500 !important;
+}
+
+main section header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card .card-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.project-card .card-header img {
+    padding: 1em;
+}
+
+
+.language-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #837E9F;
+    border-radius: 50%;
 }
