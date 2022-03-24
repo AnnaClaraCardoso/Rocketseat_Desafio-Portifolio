@@ -42,41 +42,42 @@ aside {
     grid-row-gap: 2em;
 }
 
-section {
+.section {
     background-color: var(--bg-cards);
-    border-radius: 15px;
-}
-
-aside section {
-    padding: 1.5em;
+    border-radius: 20px;
+    padding: 28px 36px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.325);
 }
 
 li, p {
     font-size: 13px;
 }
 
-.social-medias ul li a {
+a {
     text-decoration: none;
     color: var(--text-color);
+    
+}
+
+.social-medias ul li {
+    line-height: 2.5rem;
 }
 
 .social-medias ul li a img {
     vertical-align: middle;
-    width: 1.5rem;
     overflow: hidden;
-    padding: 0.8rem;
+    padding-right: 0.8rem;
 }
 
 .social-medias ul {
     list-style: none;
-    padding: 0;
 }
 
 .profile {
     text-align: center;
 }
 
-.profile #profile-picture {
+.profile-picture {
     width: 150px;
     border-radius: 50%;
     border: 2px solid #00FF00;
@@ -116,7 +117,7 @@ li, p {
     margin-bottom: 1rem;
 }
 
-.experiences ul li span:nth-child(1), .education ul li span:nth-child(1){
+.experiences ul li span:nth-child(1), .education ul li span:nth-child(1) {
     font-weight: 700 !important;
 }
 
@@ -133,15 +134,44 @@ main section header {
     justify-content: space-between;
 }
 
+.projects-section header, .recent-posts-section header{
+    background-color: var(--bg-cards);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.projects-preview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
 .project-card .card-header {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 .project-card .card-header img {
-    padding: 1em;
+    margin-right: 1%;
 }
 
+.project-card .card-header img {
+    padding-right: 3%;
+}
+
+.project-card .card-body .tech {
+    margin-left: auto;
+}
+
+.pinned-link {
+    margin-right: 1.25em;
+}
+
+.pinned-link img {
+    vertical-align: bottom;
+    overflow: hidden;
+    padding-right: 0.35em;
+}
 
 .language-color {
     position: relative;
@@ -151,4 +181,47 @@ main section header {
     height: 12px;
     border: 1px solid #837E9F;
     border-radius: 50%;
+}
+
+main .section {
+    margin-bottom: 2em;
+}
+
+.last-post {
+    display: flex;
+    
+}
+
+.last-post .post-profile-picture {
+    padding-right: 2em;
+}
+
+.last-post .post-profile-picture img {
+    width: 130px;
+    border: none;
+    border-radius: 50%;
+}
+
+main a {
+    font-size: 14px;
+}
+
+.creatAt {
+    font-weight: 300;
+}
+
+.last-post .description {
+    font-size: 16px;
+}
+
+.last-post h4 {
+    font-size: 18px;
+}
+
+main .recent-posts-section .tags a {
+    padding-right: 1em;
+}
+
+footer {
+    text-align: center;
 }
