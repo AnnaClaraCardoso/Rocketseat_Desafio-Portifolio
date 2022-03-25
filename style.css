@@ -31,7 +31,7 @@ html, body { /* resetar o body e o html */
 @media (min-width: 1050px) {
     .grid-container {
         display: grid;      /* 25% 75% */
-        grid-template-columns: 1fr 2fr; /* serve para dividir a página em colunas com tamanhos diferentes */
+        grid-template-columns: 20% 80%; /* serve para dividir a página em colunas com tamanhos diferentes */
         grid-template-rows: auto auto;
         grid-column-gap: 3em;
         grid-row-gap: 2em;
@@ -132,6 +132,7 @@ a {
 
 .social-medias ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .profile {
@@ -290,3 +291,4 @@ main .recent-posts-section .tags a {
 footer {
     text-align: center;
 }
+
