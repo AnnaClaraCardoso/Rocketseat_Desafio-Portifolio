@@ -17,16 +17,18 @@
 </head>
 
 <body>
-    <div class="grid-container">
-        <aside> <!-- elemento html semântico para contéudo lateral -->
 
-            <section class="profile section">
+    <div class="grid-container">
+
+        <aside>
+
+            <section class="card profile">
                 <img class="profile-picture" src="https://github.com/AnnaClaraCardoso.png" alt="profile-picture">
-                <h1 id="profile_full-name">Anna Clara Cardoso Martins</h1>
-                <p id="occupation">dsjfsdojfp fwfwewef</p>
+                <h1 class="profile_full-name">Anna Clara Cardoso Martins</h1>
+                <p class="occupation">dsjfsdojfp fwfwewef</p>
             </section>
     
-            <section class="social-medias section">
+            <section class="card social-medias">
                 <ul>
                     <li>
                         <a href="#"> 
@@ -73,7 +75,7 @@
                 </ul>
             </section>
     
-            <section class="technologies section">
+            <section class="card technologies">
                 <h2>Tecnologias</h2>
                 <div class="content">
                     <p class="tech">javascript</p>
@@ -88,7 +90,7 @@
                 </div>
             </section>
     
-            <section class="experiences section">
+            <section class="card experiences">
                 <h2>Experiências</h2>
                 <ul>
                     <li>
@@ -114,7 +116,7 @@
                 </ul>
             </section>
     
-            <section class="education section">
+            <section class="card education">
                 <h2>Educação</h2>
                 <ul>
                     <li>
@@ -142,18 +144,24 @@
 
         </aside>
 
+    <!--
+        <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    -->
+    
         <main class="main-content-grid-container">
 
             <section class="projects-section">
 
-                <header class="section">
+                <header class="card">
                     <h2>My Projects</h2>
-                    <a href="#" alt="see-all-projects">Ver todos</a>
+                    <a href="#" target="_blank" alt="see-all-projects">Ver todos</a>
                 </header>
                 
-                <div class="projects-preview">
+                <section class="projects-preview">
 
-                    <div class="project-card section">
+                    <div class="card project-card">
                         <h3 class="card-header">
                             <img src="assets/folder.svg" alt="">
                             my-onix
@@ -182,7 +190,7 @@
 
                     </div>
 
-                    <div class="project-card section">
+                    <div class="card project-card">
 
                         <h3 class="card-header">
                             <img src="assets/folder.svg" alt="">
@@ -212,23 +220,28 @@
 
                     </div>
 
-                </div>
+                </section>
 
             </section>
 
             <section class="recent-posts-section">
-                <header class="section">
+
+                <header class="card">
                     <h2>Recent posts</h2>
-                    <a href="#" alt="see-all-posts">Ver todos</a>
+                    <a href="#" target="_blank" alt="see-all-posts">Ver todos</a>
                 </header>
-                <div class="posts-preview">
-                    <div class="last-post section">
+
+                <section class="posts-preview">
+
+                    <div class="card post">
                         <div class="post-profile-picture">
                             <img src="https://github.com/AnnaClaraCardoso.png" alt="profile-picture">
                         </div>
                         <div class="post-content">
-                            <h4>Erro adb devices no Genymotion e Android Studio (React Native)</h4>
-                            <p class="creatAt">234322 fdssdgs</p>
+                            <div class="title-container">
+                                <h4>Erro adb devices no Genymotion e Android Studio (React Native)</h4>
+                                <small class="creatAt">2 anos</small>
+                            </div>
                             <p class="description">fsdgsgsdgdbfgj</p>
                             <div class="tags">
                                 <a href="#">#react-native</a>
@@ -236,10 +249,11 @@
                                 <a href="#">#genimotion</a>
                                 <a href="#">#genimotion</a>
                             </div>
-
                         </div>
                     </div>
-                </div>
+
+                </section>
+
             </section>
 
         </main>
@@ -251,6 +265,7 @@
     </div>
         
     <script src="https://kit.fontawesome.com/cb0174e86c.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
