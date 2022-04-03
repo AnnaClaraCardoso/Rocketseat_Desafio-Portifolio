@@ -18,9 +18,10 @@ html, body { /* resetar o body e o html */
     margin: 1.5em;
 }
 
+/* Para quando a tela atingir largura de smartphone */
 @media only screen and (max-width: 879px) {
     main {
-        margin-top: 3em;
+        margin-top: 3em; /* margem entre main e conteúdo lateral */
     }
 
     .post .post-profile-picture {
@@ -28,13 +29,23 @@ html, body { /* resetar o body e o html */
     }
 }
 
-@media (min-width: 1050px) {
+/* Para quando a tela atingir 1112px de largura*/
+@media (min-width: 1112px) {
     .grid-container {
-        display: grid;      /* 25% 75% */
-        grid-template-columns: 20% 80%; /* serve para dividir a página em colunas com tamanhos diferentes */
-        grid-template-rows: auto auto;
-        grid-column-gap: 3em;
-        grid-row-gap: 2em;
+        display: grid; /* serve para ativar o modo grid (linhasxcolunas) */
+        grid-template-columns: 20% 80%; /* serve para definir como serão as colunas (tamanhos diferentes) */
+        grid-template-rows: auto auto; /* serve para definir como serão as colunas (tamanhos iguais) */
+        grid-column-gap: 3em; /* serve para colocar um "respiro" entre as colunas */
+        grid-row-gap: 2em; /* serve para colocar um "respiro" entre as linhas */
+    }
+
+    .projects-preview {
+        display: flex; /* colocar os cards de projetos em linha */
+        gap: 2em;
+    }
+
+    .project-card {
+        width: 100%; /* fazer com que os cards de projetos*/
     }
 
     .post {
@@ -44,24 +55,26 @@ html, body { /* resetar o body e o html */
     .post .post-profile-picture {
         padding-right: 2em;
     }
-
-    .projects-preview {
-        display: flex;
-        gap: 2em;
-    }
-
-    .project-card {
-        width: 100%;
-    }
 }
 
+/* Para quando a tela atingir 880px de largura */
 @media only screen and (min-width: 880px) {
     .grid-container {
-        display: grid;      /*  25%  75%  */
-        grid-template-columns: auto auto; /* serve para dividir a página em colunas com tamanhos diferentes */
+        display: grid;
+        grid-template-columns: auto auto; /* serve para definir como serão as colunas (tamanhos iguais) */
         grid-template-rows: auto auto;
         grid-column-gap: 3em;
         grid-row-gap: 2em;
+    }
+}
+
+@media only screen and (max-width: 879px) {
+    main {
+        margin-top: 3em; /* margem entre main e conteúdo lateral */
+    }
+
+    .post .post-profile-picture {
+        padding-bottom: 2em;
     }
 }
 
@@ -161,7 +174,7 @@ a {
         (a casa novo elemento, ele será posicionado numa das 3 colunas) */
     row-gap: 10%;
     column-gap: 4%;
-    padding: 5%;
+    padding: 4%;
 }
 
 .technologies .content .tech {
@@ -291,4 +304,3 @@ main .recent-posts-section .tags a {
 footer {
     text-align: center;
 }
-
